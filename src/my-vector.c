@@ -18,8 +18,8 @@
  * along with this library. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "../my-common-code/my-clock-setup.h"
-#include "../my-common-code/my-io-setup.h"
+#include "my-clock-setup.h"
+#include "my-io-setup.h"
 
 int main(void);
 

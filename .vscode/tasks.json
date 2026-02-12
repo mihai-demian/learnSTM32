@@ -5,7 +5,7 @@
             "type": "shell",
             "label": "build",
             "options": {
-                "cwd": "my-project"
+                "cwd": "src"
                 },
             "command": "make", //"command": "make bin",
             //"problemMatcher": "$gcc"

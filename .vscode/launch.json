@@ -8,7 +8,7 @@
 		{
 	    	"name": "Debug",
 			"cwd": "${workspaceFolder}",
-			"executable": "./my-project/awesomesauce.elf",
+			"executable": "./src/learn.elf",
 			"request": "launch",
 			"type": "cortex-debug",
 			"runToEntryPoint": "main",
@@ -19,8 +19,8 @@
 		},
 		{
 			"name": "Attach",
-			"cwd": "${workspaceFolder}/my-project",
-			"executable": "./awesomesauce.elf",
+			"cwd": "${workspaceFolder}/src",
+			"executable": "./learn.elf",
 			"request": "attach",
 			"type": "cortex-debug",
 			"runToEntryPoint": "main",
