@@ -13,7 +13,12 @@ download ``rules.md`` and ``my-project/Makefile`` from https://github.com/libope
 ## electrical connections
 The PCB has 3 LEDs
 - $${\color{green}green on PB0
-- $${\color{blue}blue on PB7
-- $${\color{red}red on PB14
+- $${\color{blue}blue} on PB7
+- $${\color{red}red} on PB14
 and a user button on PC13.
 
+## small tests
+- while counting ticks every cpu cycle, there are 3196800 cpu cycles for a 1Hz toggling freq 
+
+## setting TIM12
+- setting TIM12_CH1 as a driver for the $${\color{red}red} LED (AF9) failed at first try. Reason: 

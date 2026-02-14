@@ -15,10 +15,17 @@
 
 void my_gpio_setup (void)
 {
-	gpio_mode_setup (LED_PORT, GPIO_MODE_OUTPUT, GPIO_PUPD_PULLDOWN, GREEN_PIN | BLUE_PIN | RED_PIN);
+	gpio_mode_setup (LED_PORT, GPIO_MODE_OUTPUT, GPIO_PUPD_PULLDOWN, GREEN_PIN);
 	gpio_mode_setup (MCO1_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, MCO1_PIN);
 	gpio_set_af (MCO1_PORT, GPIO_AF0, MCO1_PIN);
 	gpio_mode_setup (MCO2_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, MCO2_PIN);
 	gpio_set_af (MCO2_PORT, GPIO_AF0, MCO2_PIN);
-	gpio_set(LED_PORT, GREEN_PIN);
+	gpio_mode_setup (LED_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, RED_PIN);
+	gpio_set_af (LED_PORT, GPIO_AF1, RED_PIN);
+	//gpio_set(LED_PORT, GREEN_PIN);
+}
+
+void my_gpio_toggle (uint32_t gpioport, uint16_t gpios)
+{
+	gpio_toggle (gpioport, gpios);
 }
