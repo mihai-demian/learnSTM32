@@ -4,8 +4,10 @@ BUILD_DIR = ../bin
 SHARED_DIR = ../inc
 CFILES = my-project.c
 CFILES += my-vector.c
-CFILES += my-clock-setup.c
+CFILES += my-rcc-setup.c
 CFILES += my-io-setup.c
+CFILES += my-systick-setup.c
+
 
 # AFILES += api-asm.S
 

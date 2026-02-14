@@ -17,8 +17,14 @@ The PCB has 3 LEDs
 - $${\color{red}red} on PB14
 and a user button on PC13.
 
+## pll config
+- cpu freq=100MHz, AHB=100MHz, APB=50MHz
+- pll & plli2s with 8MHz HSE
+- plli2s enabled, set as USB clock source
+
 ## small tests
 - while counting ticks every cpu cycle, there are 3196800 cpu cycles for a 1Hz toggling freq 
+- after enablig systick with 1000Hz freq and generating an interrupt (when?) and using that interrupt to toggle the $${\color{blue}LED}, the measured freq of the led is 500.0Hz.
 
 ## setting TIM12
 - setting TIM12_CH1 as a driver for the $${\color{red}red} LED (AF9) failed at first try. Reason: 

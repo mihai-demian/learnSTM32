@@ -1,9 +1,9 @@
 #ifndef MY_IO_SETUP_H
 #define MY_IO_SETUP_H
 
-#include <stdint.h>
+//#include <stdint.h>
 
 void my_gpio_setup (void);
-void my_gpio_toggle (uint32_t port, uint16_t gpios);
+void my_gpio_toggle (void);
 
 #endif /* MY_IO_SETUP_H */

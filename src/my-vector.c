@@ -17,9 +17,11 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this library. If not, see <http://www.gnu.org/licenses/>.
  */
+#include <libopencm3/cm3/vector.h>
 
 #include "my-rcc-setup.h"
 #include "my-io-setup.h"
+#include "my-systick-setup.h"
 
 int main(void);
 
@@ -28,6 +30,12 @@ void reset_handler(void)
 	
 	my_setup_pll ();
 	my_gpio_setup ();
+	my_systick_setup ();
 	/* Call the application's entry point. */
 	(void)main();
+}
+
+void sys_tick_handler(void)
+{
+	my_gpio_toggle ();
 }

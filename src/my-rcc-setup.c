@@ -1,7 +1,7 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/flash.h>
 
-#include "my-clock-setup.h"
+#include "my-rcc-setup.h"
 
 #define RCC_PLLI2SCFGR_PLLI2SM_MASK		0x3F
 #define RCC_PLLI2SCFGR_PLLI2SM_SHIFT	0
