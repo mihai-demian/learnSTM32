@@ -18,7 +18,7 @@
  * along with this library. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "my-clock-setup.h"
+#include "my-rcc-setup.h"
 #include "my-io-setup.h"
 
 int main(void);
