@@ -12,9 +12,9 @@ download ``rules.md`` and ``my-project/Makefile`` from https://github.com/libope
 
 ## electrical connections
 The PCB has 3 LEDs
-- $${\color{green}green on PB0
-- $${\color{blue}blue} on PB7
-- $${\color{red}red} on PB14
+- $${\color{green}green}$$ on PB0
+- $${\color{blue}blue}$$ on PB7
+- $${\color{red}red}$$ on PB14
 and a user button on PC13.
 
 ## pll config
@@ -24,16 +24,17 @@ and a user button on PC13.
 
 ## small tests
 - while counting ticks every cpu cycle, there are 3196800 cpu cycles for a 1Hz toggling freq 
-- after enablig systick with 1000Hz freq and generating an interrupt (when?) and using that interrupt to toggle the $${\color{blue}LED}, the measured freq of the led is 500.0Hz.
+- after enablig systick with 1000Hz freq and generating an interrupt (when?) and using that interrupt to toggle the $${\color{blue}LED}$$, the measured freq of the led is 500.0Hz.
 
 ## setting TIM12
-- setting TIM12_CH1 as a driver for the $${\color{red}red} LED (AF9) failed at first try. Reason: 
+- setting TIM12_CH1 as a driver for the $${\color{red}red}$$ LED (AF9) failed at first try. Reason: 
 ### Take 2
 - enable systick
 - enable periph TIM12
-- set $${\color{red}red} LED (AF9)
+- set $${\color{red}red}$$ LED (AF9)
 - set up TIM12 OC1 
 [x] FAILED! looks like it's not possible to convert from float to uint32_t.
 [x] reading and writing to external variables in multiple locations does not work as expected!
 - setting the oc value to between 0 and arr value gives a duty cycle between 9.9% to 99.8% (:manshrug:)
-- mod (%) doesn't work!
+- external variable don't work as expeted!
+- set the $${\color{red}LED}$$ with 4kHz 50% static duty cycle. [X] Confirmed with multimeter.
