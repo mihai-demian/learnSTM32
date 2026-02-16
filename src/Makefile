@@ -7,6 +7,7 @@ CFILES += my-vector.c
 CFILES += my-rcc-setup.c
 CFILES += my-io-setup.c
 CFILES += my-systick-setup.c
+CFILES += my-timer-setup.c
 
 
 # AFILES += api-asm.S

@@ -28,3 +28,12 @@ and a user button on PC13.
 
 ## setting TIM12
 - setting TIM12_CH1 as a driver for the $${\color{red}red} LED (AF9) failed at first try. Reason: 
+### Take 2
+- enable systick
+- enable periph TIM12
+- set $${\color{red}red} LED (AF9)
+- set up TIM12 OC1 
+[x] FAILED! looks like it's not possible to convert from float to uint32_t.
+[x] reading and writing to external variables in multiple locations does not work as expected!
+- setting the oc value to between 0 and arr value gives a duty cycle between 9.9% to 99.8% (:manshrug:)
+- mod (%) doesn't work!

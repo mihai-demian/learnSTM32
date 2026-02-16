@@ -22,8 +22,12 @@
 #include "my-rcc-setup.h"
 #include "my-io-setup.h"
 #include "my-systick-setup.h"
+#include "my-timer-setup.h"
+#include "my-projec.h"
+#include "my-vector.h"
 
-int main(void);
+uint32_t tick_irq = 0;
+
 
 void reset_handler(void)
 {
@@ -31,11 +35,12 @@ void reset_handler(void)
 	my_setup_pll ();
 	my_gpio_setup ();
 	my_systick_setup ();
+	my_tim12_setup ();
 	/* Call the application's entry point. */
 	(void)main();
 }
 
 void sys_tick_handler(void)
 {
-	my_gpio_toggle ();
+	;
 }
