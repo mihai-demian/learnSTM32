@@ -5,5 +5,7 @@
 
 void my_gpio_setup (void);
 void my_gpio_toggle (void);
+uint16_t my_button_pressed (void);
+
 
 #endif /* MY_IO_SETUP_H */
