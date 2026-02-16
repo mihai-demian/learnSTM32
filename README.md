@@ -33,8 +33,9 @@ and a user button on PC13.
 - enable periph TIM12
 - set $${\color{red}LED}$$ (AF9)
 - set up TIM12 OC1 
-[x] FAILED! looks like it's not possible to convert from float to uint32_t.
-[x] reading and writing to external variables in multiple locations does not work as expected!
+- [x] FAILED! looks like it's not possible to convert from float to uint32_t.
+- [x] reading and writing to external variables in multiple locations does not work as expected!
 - setting the oc value to between 0 and arr value gives a duty cycle between 9.9% to 99.8% (:manshrug:)
 - external variable don't work as expeted!
-- set the $${\color{red}LED}$$ with 4kHz 50% static duty cycle. [X] Confirmed with multimeter.
+- set the $${\color{red}LED}$$ with 4kHz 50% static duty cycle. 
+-[X] Confirmed with multimeter.
