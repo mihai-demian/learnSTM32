@@ -36,5 +36,5 @@ uint16_t my_button_pressed (void)
 {
 	volatile uint16_t reg;
 	reg = gpio_port_read (BUT_PORT) & BUT_PIN;
-	return reg;
+	return reg == BUT_PIN;
 }

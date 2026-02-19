@@ -5,7 +5,7 @@
 /* tim_freq = sys_freq / ((p
 sc - 1) * (arr - 1))*/
 #define TIM12_PSC_VAL   (100)
-#define TIM12_ARR_VAL   (250) // 1000 = 1kHz; 500 = 2kHz; 250 = 4kHz etc
+#define TIM12_ARR_VAL   (250) // 1000 = 1kHz; 500 = 2kHz; 250 = 4kHz 125 = 8kHz 
 #define TIM12_OC_VAL    (TIM12_ARR_VAL / 2)
 
 uint16_t tim12_dc;
