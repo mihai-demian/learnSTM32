@@ -77,4 +77,5 @@ void my_setup_pll (void)
 	rcc_periph_clock_enable (RCC_GPIOB);
 	rcc_periph_clock_enable (RCC_GPIOC);
 	rcc_periph_clock_enable (RCC_TIM12);
+	rcc_periph_clock_enable (RCC_OTGFS);
 }

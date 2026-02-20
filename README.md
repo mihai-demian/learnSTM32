@@ -38,3 +38,11 @@ and a user button on PC13.
 - setting the oc value to between 0 and arr value gives a duty cycle between 9.9% to 99.8% (:manshrug:)
 - set the $${\color{red}LED}$$ with 4kHz 50% static duty cycle. 
 - [X] Confirmed with multimeter. (with OC_VALUE = ARR_VALUE / 2 + 1)
+
+
+## adding USB communication
+USB_VBUS    =   PA9     (AF10)
+USB_ID      =   PA10    (AF10)
+USB_DM      =   PA11    (AF10)
+USB_DP      =   PA12    (AF10)
+

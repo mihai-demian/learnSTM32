@@ -2,16 +2,26 @@
 
 #include "my-io-setup.h"
 
+/* user leds and button */
 #define LED_PORT	GPIOB
 #define GREEN_PIN	GPIO0
 #define BLUE_PIN	GPIO7
 #define RED_PIN		GPIO14
 #define BUT_PORT	GPIOC
 #define BUT_PIN		GPIO13
+
+/* MCO functions */
 #define MCO1_PORT	GPIOA
 #define MCO1_PIN	GPIO8
 #define MCO2_PORT	GPIOC
 #define MCO2_PIN	GPIO9
+
+#define USB_PORT	GPIOA
+#define USB_VBUS	GPIO9
+#define USB_ID		GPIO10
+#define USB_DM		GPIO11
+#define USB_DP		GPIO12
+
 
 void my_gpio_setup (void)
 {
@@ -23,6 +33,11 @@ void my_gpio_setup (void)
 	gpio_mode_setup (LED_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, RED_PIN);
 	gpio_set_af (LED_PORT, GPIO_AF9, RED_PIN);
 	gpio_mode_setup (BUT_PORT, GPIO_MODE_INPUT, GPIO_PUPD_PULLDOWN, BUT_PIN);
+
+	/* USB port settings */
+	gpio_mode_setup (USB_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, USB_DM | USB_DP);
+	gpio_set_af (USB_PORT, GPIO_AF9, USB_DM | USB_DP);
+	
 
 	//gpio_set(LED_PORT, GREEN_PIN);
 }
