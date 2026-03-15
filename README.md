@@ -21,7 +21,7 @@ download `rules.md` and `my-project/Makefile` [libopencm3-templates](https://git
 The PCB has 3 LEDs
 - green on PB0
 - blue on PB7
-- $red on PB14
+- red on PB14
 
 and a user button on PC13.
 
@@ -30,6 +30,6 @@ Table 6-1 in OTG and EH Supliment defines the OTG descriptor
 |-----------|-----------|-----------|-----------|---------------|
 |   0       |bLength    | 1         | Number (5)|Size of descriptor |
 
-| DC | U~t~   | U~m~  |
+| DC | U$_{t}$   | U~m~  |
 |----|--------|-------|
 |  5 | 0.165  | 0.165 |
