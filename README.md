@@ -29,3 +29,7 @@ Table 6-1 in OTG and EH Supliment defines the OTG descriptor
 |   Offset  |   Field   |   Size    |   Value   |   Description |
 |-----------|-----------|-----------|-----------|---------------|
 |   0       |bLength    | 1         | Number (5)|Size of descriptor |
+
+| DC | U~t~   | U~m~  |
+|----|--------|-------|
+|  5 | 0.165  | 0.165 |
