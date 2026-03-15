@@ -12,9 +12,9 @@ download ``rules.md`` and ``my-project/Makefile`` from https://github.com/libope
 
 ## electrical connections
 The PCB has 3 LEDs
-    - green on PB0
-    - blue on PB7
-    - $red on PB14
+- green on PB0
+- blue on PB7
+- $red on PB14
 
 and a user button on PC13.
 
