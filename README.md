@@ -8,7 +8,7 @@ git submodule add https://github.com/libopencm3/libopencm3.git
 
 mkdir inc src bin
 
-download ``rules.md`` and ``my-project/Makefile`` from https://github.com/libopencm3/libopencm3-template.git and copied them to current directory, then added them to git
+download (single backtick)(`rules.md`) and (double backtick)(``my-project/Makefile``) from (link:) [libopencm3-templates](https://github.com/libopencm3/libopencm3-template.git) and copied them to current directory, then added them to git
 
 ## electrical connections
 The PCB has 3 LEDs
