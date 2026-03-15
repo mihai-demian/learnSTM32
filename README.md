@@ -12,9 +12,9 @@ download ``rules.md`` and ``my-project/Makefile`` from https://github.com/libope
 
 ## electrical connections
 The PCB has 3 LEDs
-- $${\color{green}LED} on PB0
-- $${\color{blue}LED} on PB7
-- $${\color{red}LED} on PB14
+- $${\color{green}LED}$$ on PB0
+- $${\color{blue}LED}$$ on PB7
+- $${\color{red}LED}$$ on PB14
 and a user button on PC13.
 
 Table 6-1 in OTG and EH Supliment defines the OTG descriptor
