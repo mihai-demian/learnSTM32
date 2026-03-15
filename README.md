@@ -17,3 +17,7 @@ The PCB has 3 LEDs
 - $${\color{red}red on PB14
 and a user button on PC13.
 
+Table 6-1 in OTG and EH Supliment defines the OTG descriptor
+|   Offset  |   Field   |   Size    |   Value   |   Description |
+|-----------|-----------|-----------|-----------|---------------|
+|   0       |bLength    | 1         | Number (5)|Size of descriptor |
