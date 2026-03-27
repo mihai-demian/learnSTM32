@@ -33,3 +33,5 @@ Table 6-1 in OTG and EH Supliment defines the OTG descriptor
 | DC | U $_{t}$   | U ~m~  |
 |----|--------|-------|
 |  5 | 0.165  | 0.165 |
+
+&plusmn;
